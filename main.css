@@ -175,6 +175,7 @@ span:hover{
     text-decoration: underline;
     color: var(--main-color);
     cursor: pointer;
+    display: none;
 }
 
 
