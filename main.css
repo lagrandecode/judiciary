@@ -44,7 +44,7 @@ body{
     top: 0;
     left: 50%;
     /* background: var(--main-color); */
-    background: red;
+    /* background: red; */
     z-index: 98;
     transition: all 1s ease;
     transform-style: preserve-3d;
@@ -57,6 +57,8 @@ body{
     width: 100%;
     position: absolute;
     content: '';
+    background: var(--main-color);
+    opacity: 0.5;
 }
 
 
