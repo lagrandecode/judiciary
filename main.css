@@ -52,6 +52,13 @@ body{
 
 
 }
+
+img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+}
 .cover::before{
     height: 100%;
     width: 100%;
@@ -175,7 +182,7 @@ span:hover{
     text-decoration: underline;
     color: var(--main-color);
     cursor: pointer;
-    display: none;
+
 }
 
 
