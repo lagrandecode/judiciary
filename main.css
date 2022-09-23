@@ -58,6 +58,8 @@ img{
     width: 100%;
     position: absolute;
     object-fit: cover;
+    z-index: 12;
+    backface-visibility: hidden;
 }
 .cover::before{
     height: 100%;
