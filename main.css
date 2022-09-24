@@ -34,6 +34,7 @@ body{
 
 .container #flip:checked~ .cover{
     transform: rotateY(-180deg);
+    
 
 }
 
@@ -45,10 +46,11 @@ body{
     left: 50%;
     /* background: var(--main-color); */
     /* background: red; */
-    z-index: 98;
+    z-index: 100;
     transition: all 1s ease;
     transform-style: preserve-3d;
     transform-origin: left;
+    
 
 
 }
@@ -60,7 +62,25 @@ img{
     object-fit: cover;
     z-index: 12;
     backface-visibility: hidden;
+    
 }
+
+
+.cover .back .backimg{
+    transform: rotateY(180deg);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 12;
+
+}
+
+
+
+
+
+
 .cover::before{
     height: 100%;
     width: 100%;
@@ -68,6 +88,8 @@ img{
     content: '';
     background: var(--main-color);
     opacity: 0.5;
+    /* z-index: 100; */
+    
 }
 
 
