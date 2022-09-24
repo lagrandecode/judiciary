@@ -211,7 +211,7 @@ span{
 
 span:hover{
     text-decoration: underline;
-    color: var(--main-color);
+    color: red;
     cursor: pointer;
 
 }
