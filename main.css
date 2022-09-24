@@ -61,7 +61,8 @@ img{
     position: absolute;
     object-fit: cover;
     z-index: 12;
-    backface-visibility: hidden;
+ 
+
     
 }
 
@@ -73,6 +74,9 @@ img{
     position: absolute;
     object-fit: cover;
     z-index: 12;
+   
+
+    backface-visibility: hidden;
 
 }
 
@@ -89,6 +93,7 @@ img{
     background: var(--main-color);
     opacity: 0.5;
     /* z-index: 100; */
+  
     
 }
 
@@ -202,11 +207,43 @@ span{
     cursor: pointer;
 }
 
+
+
 span:hover{
     text-decoration: underline;
     color: var(--main-color);
     cursor: pointer;
 
+}
+
+.container #flip{
+    display: none;
+
+}
+
+@media (max-width: 730px){
+    .cover{
+        display: none;
+    }
+    .form-content .login-form,
+    .form-content .signup-form{
+     width: 100%;
+    /* background: red; */
+    }
+
+
+    .signup-form{
+        display: none;
+    }
+
+    .container #flip:checked ~ form .signup-form{
+        display: block;
+    }
+    .container #flip:checked ~ form .login-form{
+        display: none;
+    }
+
+     
 }
 
 
